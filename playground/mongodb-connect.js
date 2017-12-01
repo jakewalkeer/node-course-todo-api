@@ -12,7 +12,7 @@ console.log(obj);
 
 MongoClient.connect('mongodb://localhost:27017/ToDoApp', (err, db) => {
     if (err) {
-      return console.log('Unable to connect to MongoDB database');
+      return console.log('Unable to connect to MongoDB database', err);
     }
     console.log('Connected to MongoDB server');
 
